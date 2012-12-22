@@ -20,7 +20,10 @@ void setup(){
 
 void loop(){
   // Write the values to the LED's
-  analogWrite(LEDR, pot1.getValue());
-  analogWrite(LEDG, pot2.getValue());
-  analogWrite(LEDB, pot3.getValue());
+  
+  int pot1Inverted = map(pot1.getValue(), 0, 1023, 1023, 0);
+  analogWrite(LEDR, pot1Inverted/4);
+  analogWrite(LEDG, pot2.getValue()/4);
+  analogWrite(LEDB, pot3.getValue()/4);
+  delay(1);
 }

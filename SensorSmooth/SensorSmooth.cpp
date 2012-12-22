@@ -3,9 +3,6 @@
 //<<contructor>>
 SensorSmooth::SensorSmooth(){}
 
-//<<destructor>>
-SensorSmooth::~SensorSmooth(){}
-
 // get the pin to listen on for sensor data
 void SensorSmooth::setSensor(int inputPin){
 	sensorPin = inputPin;

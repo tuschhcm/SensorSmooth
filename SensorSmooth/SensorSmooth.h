@@ -5,8 +5,7 @@
 
 class SensorSmooth{
 public:
-        SensorSmooth(int numReadings);
-        ~SensorSmooth();
+        SensorSmooth();
         void setSensor(int inputPin);
         int getValue();
 private:

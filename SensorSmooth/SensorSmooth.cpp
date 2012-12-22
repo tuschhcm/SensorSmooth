@@ -1,16 +1,7 @@
 #include "SensorSmooth.h"	//include the declaration for this class
 
-int sensorPin;				//pin to listen on
-int numReadings;			//size of array to average
-int readings[numReadings];	//initialize array to hold sensor data
-int index = 0;				//current reading
-int total = 0;				//running total
-int smoothedValue = 0;		//the average of sensor values
-
-//<<contructor>> set the size of the array
-SensorSmooth::SensorSmooth(int n){
-	numReadings = n;
-}
+//<<contructor>>
+SensorSmooth::SensorSmooth(){}
 
 //<<destructor>>
 SensorSmooth::~SensorSmooth(){}

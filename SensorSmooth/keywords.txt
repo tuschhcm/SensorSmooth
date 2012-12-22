@@ -1,0 +1,4 @@
+SensorSmooth	KEYWORD1
+
+setSensor	KEYWORD2
+getValue	KEYWORD2

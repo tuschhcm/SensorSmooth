@@ -6,18 +6,11 @@
 #define LEDR 9
 #define LEDG 10
 #define LEDB 11
-
-const int numReadings = 10; // set the number of readings to average
-
+  
 // create new sensor smoothing objects
-SensorSmooth pot1(numReadings);
-SensorSmooth pot2(numReadings);
-SensorSmooth pot3(numReadings);
-
-// Set the sensors the sensorsmooth objects listen too
-pot1.setSensor(SENSORP0);
-pot2.setSensor(SENSORP1);
-pot3.setSensor(SENSORP2);
+SensorSmooth pot1(SENSORP0);
+SensorSmooth pot2(SENSORP1);
+SensorSmooth pot3(SENSORP2);
 
 void setup(){
   pinMode(LEDR, OUTPUT);

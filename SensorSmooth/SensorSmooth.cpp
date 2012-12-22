@@ -1,11 +1,15 @@
 #include "SensorSmooth.h"	//include the declaration for this class
+#include "Arduino.h"
 
 //<<contructor>>
-SensorSmooth::SensorSmooth(){}
+SensorSmooth::SensorSmooth(int pin){
+	sensorPin = pin;
+	numReadings = 10;
+}
 
 // get the pin to listen on for sensor data
-void SensorSmooth::setSensor(int inputPin){
-	sensorPin = inputPin;
+void SensorSmooth::setSensor(int pin){
+	sensorPin = pin;
 }
 
 // calculate and return the value of the smoothing algorithim
